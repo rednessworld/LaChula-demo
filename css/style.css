@@ -321,50 +321,60 @@ table {
 .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Nav menu — mobile first */
+/* Nav menu — mobile first: slide-down dropdown */
 .nav-menu {
   position: fixed;
-  inset: 0;
-  background: var(--color-surface);
+  top: var(--nav-height);
+  left: 0;
+  right: 0;
+  background: var(--color-background);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: var(--space-lg);
+  gap: var(--space-md);
+  padding: 1rem 1.25rem 2rem;
   opacity: 0;
   pointer-events: none;
-  transform: translateX(100%);
-  transition: transform var(--transition), opacity var(--transition);
-  z-index: 999;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1001;
+  box-shadow: 0 8px 32px rgba(42, 26, 15, 0.13);
+  border-top: 1px solid var(--color-border);
 }
 
 .nav-menu.open {
   opacity: 1;
   pointer-events: all;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .nav-links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-md);
+  gap: 0;
+  width: 100%;
 }
 
 .nav-links a {
   font-family: var(--font-display);
-  font-size: 1.6rem;
+  font-size: 1.15rem;
   font-weight: 400;
   color: var(--color-text);
   transition: color var(--transition);
   position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1.25rem 0;
 }
 
 .nav-links a::after {
   content: '';
   position: absolute;
-  bottom: -3px;
-  left: 0;
+  bottom: 0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
   width: 0;
   height: 2px;
   background: var(--color-primary);
@@ -378,7 +388,7 @@ table {
 
 .nav-links a:hover::after,
 .nav-links a:focus-visible::after {
-  width: 100%;
+  width: 2rem;
 }
 
 /* Lang switcher */
@@ -428,17 +438,23 @@ table {
 
   .nav-menu {
     position: static;
+    top: auto;
     flex-direction: row;
     background: none;
     opacity: 1;
     pointer-events: all;
     transform: none;
     gap: 0;
+    padding: 0;
+    box-shadow: none;
+    border-top: none;
+    z-index: auto;
   }
 
   .nav-links {
     flex-direction: row;
     gap: var(--space-md);
+    width: auto;
   }
 
   .nav-links a {
@@ -446,9 +462,23 @@ table {
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--color-text);
+    padding: 0;
+    text-align: left;
+    width: auto;
   }
 
-  /* Hide the in-overlay copy — desktop uses the direct .nav child instead */
+  .nav-links a::after {
+    bottom: -3px;
+    left: 0;
+    transform: none;
+  }
+
+  .nav-links a:hover::after,
+  .nav-links a:focus-visible::after {
+    width: 100%;
+  }
+
+  /* Hide the in-menu copy — desktop uses the direct .nav child instead */
   .nav-menu .lang-switcher { display: none; }
 
   /* Show the right-column lang switcher */

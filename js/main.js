@@ -471,7 +471,6 @@ function openMenu() {
   hamburger.setAttribute('aria-expanded', 'true');
   hamburger.setAttribute('aria-label', 'Cerrar menú de navegación');
   navMenu.classList.add('open');
-  document.body.style.overflow = 'hidden';
 }
 
 function closeMenu() {
@@ -479,7 +478,6 @@ function closeMenu() {
   hamburger.setAttribute('aria-expanded', 'false');
   hamburger.setAttribute('aria-label', 'Abrir menú de navegación');
   navMenu.classList.remove('open');
-  document.body.style.overflow = '';
 }
 
 hamburger.addEventListener('click', () => {
