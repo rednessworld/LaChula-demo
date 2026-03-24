@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La Chula Cervecería Mexicana — Auténtica cocina mexicana en Barcelona. Tacos, quesadillas, micheladas y más. Cerca de la Sagrada Família, Eixample.">
+  <meta property="og:title" content="La Chula Cervecería Mexicana — Barcelona">
+  <meta property="og:description" content="Sabor auténtico, alma barcelonesa. Tacos, quesadillas y micheladas en el corazón de Barcelona.">
+  <meta property="og:type" content="restaurant">
+  <title>La Chula Cervecería Mexicana — Barcelona</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+
+      <a href="#inicio" class="nav-logo" aria-label="La Chula — volver al inicio">
+        <img src="images/logo.png" alt="La Chula Cervecería Mexicana" class="nav-logo-img">
+      </a>
+
+      <button class="hamburger" id="hamburger"
+              aria-label="Abrir menú de navegación"
+              aria-expanded="false"
+              aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#inicio"          data-i18n="nav-home">Inicio</a></li>
+          <li><a href="#menu"            data-i18n="nav-menu-link">Menú</a></li>
+          <li><a href="#sobre-nosotros"  data-i18n="nav-about">Nosotros</a></li>
+          <li><a href="#reservas"        data-i18n="nav-reservations">Reservas</a></li>
+          <li><a href="#contacto"        data-i18n="nav-contact">Contacto</a></li>
+        </ul>
+        <!-- shown in mobile overlay only -->
+        <div class="lang-switcher" role="group" aria-label="Seleccionar idioma">
+          <button class="lang-btn active" data-lang="es" aria-pressed="true">ES</button>
+          <button class="lang-btn"        data-lang="en" aria-pressed="false">EN</button>
+          <button class="lang-btn"        data-lang="ca" aria-pressed="false">CA</button>
+        </div>
+      </div>
+
+      <!-- desktop right-column lang switcher -->
+      <div class="lang-switcher" role="group" aria-label="Seleccionar idioma">
+        <button class="lang-btn active" data-lang="es" aria-pressed="true">ES</button>
+        <button class="lang-btn"        data-lang="en" aria-pressed="false">EN</button>
+        <button class="lang-btn"        data-lang="ca" aria-pressed="false">CA</button>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="inicio" aria-label="Bienvenida a La Chula">
+    <div class="hero-bg">
+      <img
+        src="images/hero1.png"
+        alt="Fachada y ambiente vibrante de La Chula Cervecería Mexicana en Barcelona"
+        class="hero-img"
+        loading="eager"
+        fetchpriority="high">
+      <div class="hero-overlay" aria-hidden="true"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-i18n="hero-eyebrow">Cervecería Mexicana · Barcelona</p>
+      <img src="images/logo.png" alt="La Chula Cervecería Mexicana" class="hero-logo">
+      <p class="hero-tagline" data-i18n="hero-tagline">Sabor auténtico,<br>alma barcelonesa</p>
+      <a href="tel:+34935417610" class="btn btn-primary hero-cta" data-i18n="hero-cta">
+        Reservar ahora
+      </a>
+    </div>
+    <a href="#sobre-nosotros" class="scroll-indicator" aria-label="Desplazarse hacia abajo">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </a>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section class="about section" id="sobre-nosotros">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-text fade-in">
+          <span class="section-label" data-i18n="about-label">Nuestra historia</span>
+          <h2 class="section-title" data-i18n="about-title">Donde México<br>se encuentra<br>con Barcelona</h2>
+          <p data-i18n="about-p1">En La Chula creemos que la auténtica cocina mexicana merece un espacio propio en el corazón de Barcelona. Nuestros tacos, quesadillas y micheladas se elaboran con ingredientes seleccionados y amor sin filtros.</p>
+          <p data-i18n="about-p2">El local es un festín para los sentidos: paredes tapizadas de flores, sofás cómodos y un ambiente que fusiona la calidez de la cantina mexicana con la energía moderna del Eixample.</p>
+          <a href="#menu" class="btn btn-outline" data-i18n="about-cta">Ver la carta</a>
+        </div>
+
+        <div class="about-images fade-in">
+          <div class="about-img-main">
+            <img
+              src="images/interior1.jpg"
+              alt="Interior de La Chula con pared de flores coloridas y ambiente acogedor"
+              loading="lazy">
+          </div>
+          <div class="about-img-accent">
+            <img
+              src="images/gallery8.jpg"
+              alt="Ambiente y decoración de La Chula Cervecería Mexicana"
+              loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       MENU HIGHLIGHTS
+  ═══════════════════════════════════════════ -->
+  <section class="menu section" id="menu">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <span class="section-label" data-i18n="menu-label">La carta</span>
+        <h2 class="section-title" data-i18n="menu-title">Nuestras especialidades</h2>
+        <p class="section-subtitle" data-i18n="menu-subtitle">Ingredientes auténticos, recetas con historia</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="menu-filters fade-in" role="tablist" aria-label="Filtrar por categoría">
+        <button class="filter-btn active" data-filter="tacos"          role="tab" aria-selected="true"  data-i18n="filter-tacos">Tacos</button>
+        <button class="filter-btn"        data-filter="especialidades" role="tab" aria-selected="false" data-i18n="filter-especialidades">Especialidades</button>
+        <button class="filter-btn"        data-filter="quesadillas"    role="tab" aria-selected="false" data-i18n="filter-quesadillas">Quesadillas</button>
+        <button class="filter-btn"        data-filter="ceviches"       role="tab" aria-selected="false" data-i18n="filter-ceviches">Ceviches</button>
+        <button class="filter-btn"        data-filter="compartimos"    role="tab" aria-selected="false" data-i18n="filter-compartimos">Compartimos</button>
+        <button class="filter-btn"        data-filter="postres"        role="tab" aria-selected="false" data-i18n="filter-postres">Postres</button>
+        <button class="filter-btn"        data-filter="bebidas"        role="tab" aria-selected="false" data-i18n="filter-bebidas">Bebidas</button>
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+
+        <!-- ── TACOS ── -->
+        <article class="dish-card fade-in" data-category="tacos">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-taco">Taco</span>
+            <h3 class="dish-name">Pastor y Piña Asada</h3>
+            <p class="dish-desc" data-i18n="dish-t1">Cerdo estilo D.F. con piña asada — 3 uds.</p>
+            <span class="dish-price">€11.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="tacos">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-taco">Taco</span>
+            <h3 class="dish-name">Cochinita Pibil</h3>
+            <p class="dish-desc" data-i18n="dish-t2">Cerdo desmechado en hoja de plátano, cebolla morada encurtida — 3 uds.</p>
+            <span class="dish-price">€11.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="tacos">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-taco">Taco</span>
+            <h3 class="dish-name">Carnitas</h3>
+            <p class="dish-desc" data-i18n="dish-t3">Cerdo confitado con naranja, cebolla, cilantro y guacamole — 3 uds.</p>
+            <span class="dish-price">€11.45</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="tacos">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-taco">Taco</span>
+            <h3 class="dish-name">El Pescador</h3>
+            <p class="dish-desc" data-i18n="dish-t4">Pescado frito, mayo chipotle, alubias, lechuga, pico de gallo, guacamole y feta — 3 uds.</p>
+            <span class="dish-price">€11.45</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="tacos">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-taco">Taco</span>
+            <h3 class="dish-name">De Camarón</h3>
+            <p class="dish-desc" data-i18n="dish-t5">Camarón, alubias, lechuga, mayo chipotle, pico de gallo y feta — 3 uds.</p>
+            <span class="dish-price">€12.25</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="tacos">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-taco">Taco</span>
+            <h3 class="dish-name">Tinga de Pollo o Ternera</h3>
+            <p class="dish-desc" data-i18n="dish-t6">Ternera o pollo estofado al chipotle con cebolla — 3 uds.</p>
+            <span class="dish-price">€11.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="tacos">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-taco">Taco</span>
+            <h3 class="dish-name">De Asada</h3>
+            <p class="dish-desc" data-i18n="dish-t7">Ternera, chorizo y guacamole — 3 uds.</p>
+            <span class="dish-price">€11.45</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="tacos">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-taco">Taco</span>
+            <h3 class="dish-name">Pulpo al Pastor</h3>
+            <p class="dish-desc" data-i18n="dish-t8">Pulpo estilo pastor, cilantro, cebolla y piña — 3 uds.</p>
+            <span class="dish-price">€11.45</span>
+          </div>
+        </article>
+
+        <!-- ── QUESADILLAS ── -->
+        <article class="dish-card fade-in" data-category="quesadillas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-quesadilla">Quesadilla</span>
+            <h3 class="dish-name">La Gringa</h3>
+            <p class="dish-desc" data-i18n="dish-q1">Pastor, piña y queso — con queso y patatas fritas</p>
+            <span class="dish-price">€12.25</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="quesadillas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-quesadilla">Quesadilla</span>
+            <h3 class="dish-name">La de Tinga</h3>
+            <p class="dish-desc" data-i18n="dish-q2">Tinga de pollo o ternera — con queso y patatas fritas</p>
+            <span class="dish-price">€12.25</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="quesadillas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-quesadilla">Quesadilla</span>
+            <h3 class="dish-name">La Yucateca</h3>
+            <p class="dish-desc" data-i18n="dish-q3">Cochinita pibil, queso y cebolla encurtida — con patatas fritas</p>
+            <span class="dish-price">€12.25</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="quesadillas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-quesadilla">Quesadilla</span>
+            <h3 class="dish-name">La Jarocha</h3>
+            <p class="dish-desc" data-i18n="dish-q4">Camarón, alubias, aguacate, cebolla pochada y mayo chipotle — con patatas fritas</p>
+            <span class="dish-price">€13.45</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="quesadillas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-quesadilla">Quesadilla</span>
+            <h3 class="dish-name">La Norteña</h3>
+            <p class="dish-desc" data-i18n="dish-q5">Ternera, cebolla y aguacate — con queso y patatas fritas</p>
+            <span class="dish-price">€13.45</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="quesadillas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-quesadilla">Quesadilla</span>
+            <h3 class="dish-name">Kidsadilla</h3>
+            <p class="dish-desc" data-i18n="dish-q6">Queso con ternera, pollo o jamón dulce — con patatas fritas</p>
+            <span class="dish-price">€12.25</span>
+          </div>
+        </article>
+
+        <!-- ── CEVICHES ── -->
+        <article class="dish-card fade-in" data-category="ceviches">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-ceviche">Ceviche</span>
+            <h3 class="dish-name">Aguachile</h3>
+            <p class="dish-desc" data-i18n="dish-c1">Gambas crudas en limón, cilantro, aguacate, pepino, cebolla y chile</p>
+            <span class="dish-price">€13.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="ceviches">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-ceviche">Ceviche</span>
+            <h3 class="dish-name">Corvina y Curry Verde</h3>
+            <p class="dish-desc" data-i18n="dish-c2">Corvina, manzana verde, aguacate, cilantro, tomate, limón y curry verde</p>
+            <span class="dish-price">€12.50</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="ceviches">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-ceviche">Ceviche</span>
+            <h3 class="dish-name">Acapulco Tropical</h3>
+            <p class="dish-desc" data-i18n="dish-c3">Ceviche de camarón sobre tostada crujiente, aguacate, pepino, cilantro, cebolla roja y tomate</p>
+            <span class="dish-price">€13.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="ceviches">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-ceviche">Ceviche</span>
+            <h3 class="dish-name">La Mixta</h3>
+            <p class="dish-desc" data-i18n="dish-c4">Tostada mexicana clásica con ceviche mixto de camarón y pescado</p>
+            <span class="dish-price">€13.45</span>
+          </div>
+        </article>
+
+        <!-- ── COMPARTIMOS ── -->
+        <article class="dish-card fade-in" data-category="compartimos">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-compartir">Para compartir</span>
+            <h3 class="dish-name">Guacamole con Totopos</h3>
+            <p class="dish-desc" data-i18n="dish-s1">Guacamole casero con totopos artesanales</p>
+            <span class="dish-price">€8.85</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="compartimos">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-compartir">Para compartir</span>
+            <h3 class="dish-name">Nachos Clásicos</h3>
+            <p class="dish-desc" data-i18n="dish-s2">Totopos, queso fundido, alubias y pico de gallo</p>
+            <span class="dish-price">€11.45 <small>/ ½ €10.45</small></span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="compartimos">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-compartir">Para compartir</span>
+            <h3 class="dish-name">Nachos Supreme</h3>
+            <p class="dish-desc" data-i18n="dish-s3">Queso, alubias, guacamole, pico de gallo, cochinita, pollo/ternera/verduras</p>
+            <span class="dish-price">€13.50 <small>/ ½ €12.50</small></span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="compartimos">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-compartir">Para compartir</span>
+            <h3 class="dish-name">Huevos Encabronados</h3>
+            <p class="dish-desc" data-i18n="dish-s4">Tiras de tortilla fritas, salsa casera y huevo tierno</p>
+            <span class="dish-price">€9.50</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="compartimos">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-compartir">Para compartir</span>
+            <h3 class="dish-name">Bravas La Chula</h3>
+            <p class="dish-desc" data-i18n="dish-s5">Nuestra versión de las patatas bravas</p>
+            <span class="dish-price">€8.00</span>
+          </div>
+        </article>
+
+        <!-- ── ESPECIALIDADES ── -->
+        <article class="dish-card fade-in" data-category="especialidades">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-especial">Especial</span>
+            <h3 class="dish-name">La Condesa</h3>
+            <p class="dish-desc" data-i18n="dish-e1">Tostada de maíz, tinga de pollo o ternera, alubias, crema, feta, pico de gallo y lechuga</p>
+            <span class="dish-price">€11.25</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="especialidades">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-especial">Especial</span>
+            <h3 class="dish-name">Enchiladas o Chilaquiles</h3>
+            <p class="dish-desc" data-i18n="dish-e2">Salsa roja, verde o mole — con huevo +€1</p>
+            <span class="dish-price">€13.90</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="especialidades">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-especial">Especial</span>
+            <h3 class="dish-name">Fajitas al Sartén</h3>
+            <p class="dish-desc" data-i18n="dish-e3">Fajitas clásicas con 4 tortillas — con camarón +€1</p>
+            <span class="dish-price">€14.85</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="especialidades">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-especial">Especial</span>
+            <h3 class="dish-name">Cochinita Bum Burger</h3>
+            <p class="dish-desc" data-i18n="dish-e4">Burger de cochinita pibil, aguacate, cebolla encurtida y cilantro</p>
+            <span class="dish-price">€13.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="especialidades">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-especial">Especial</span>
+            <h3 class="dish-name">Wild Ribs</h3>
+            <p class="dish-desc" data-i18n="dish-e5">Costillas de cerdo marinadas en bourbon, toque mexicano y patatas fritas</p>
+            <span class="dish-price">€16.85</span>
+          </div>
+        </article>
+
+        <!-- ── POSTRES ── -->
+        <article class="dish-card fade-in" data-category="postres">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-postre">Postre</span>
+            <h3 class="dish-name">Tres Leches</h3>
+            <p class="dish-desc" data-i18n="dish-p1">Bizcocho mexicano clásico empapado en tres tipos de leche</p>
+            <span class="dish-price">€6.45</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="postres">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-postre">Postre</span>
+            <h3 class="dish-name">Creamy Goodness</h3>
+            <p class="dish-desc" data-i18n="dish-p2">Tarta de queso con frutos rojos</p>
+            <span class="dish-price">€6.45</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="postres">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-postre">Postre</span>
+            <h3 class="dish-name">Rico Suave</h3>
+            <p class="dish-desc" data-i18n="dish-p3">Bizcocho de chocolate con helado</p>
+            <span class="dish-price">€6.45</span>
+          </div>
+        </article>
+
+        <!-- ── BEBIDAS ── -->
+        <div class="menu-subheading fade-in" data-category="bebidas">
+          <span data-i18n="subhead-cocktails">Cocktails</span>
+        </div>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">Yanquiri</h3>
+            <p class="dish-desc">Daiquiri</p>
+            <span class="dish-price">€8.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">Mojito Clásico</h3>
+            <span class="dish-price">€8.50</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">La Chula Cubana</h3>
+            <p class="dish-desc">Mojito versión La Chula</p>
+            <span class="dish-price">€9.50</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">Caipirinha</h3>
+            <span class="dish-price">€9.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">Juanito Guayabero Sour</h3>
+            <p class="dish-desc">Whisky</p>
+            <span class="dish-price">€8.50</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">Paloma</h3>
+            <p class="dish-desc">Tequila y refresco de pomelo</p>
+            <span class="dish-price">€8.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">Margarita Frozen</h3>
+            <p class="dish-desc">Consultar sabores</p>
+            <span class="dish-price">€8.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">Margarita Clásica</h3>
+            <span class="dish-price">€8.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">María La Sangrona</h3>
+            <p class="dish-desc">Bloody Mary tequila o mezcal</p>
+            <span class="dish-price">€9.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">Mezcalita La Incondicional</h3>
+            <p class="dish-desc">Limón</p>
+            <span class="dish-price">€9.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">Mezcalito Sunny</h3>
+            <p class="dish-desc">Naranja y granadina</p>
+            <span class="dish-price">€9.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">Soy Lo Prohibido</h3>
+            <p class="dish-desc">Tamarindo y mango</p>
+            <span class="dish-price">€9.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">Suavecito</h3>
+            <p class="dish-desc">Vodka, piña, limón, mango, menta, blue curaçao</p>
+            <span class="dish-price">€9.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">Picocito</h3>
+            <p class="dish-desc">Tamarindo, limón y chamoy</p>
+            <span class="dish-price">€9.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cocktail">Cóctel</span>
+            <h3 class="dish-name">Gin Tonic La Chula</h3>
+            <span class="dish-price">€9.00</span>
+          </div>
+        </article>
+
+        <div class="menu-subheading fade-in" data-category="bebidas">
+          <span data-i18n="subhead-cervezas">Cervezas</span>
+        </div>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Caña</h3>
+            <span class="dish-price">€2.95</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Pinta 50cl</h3>
+            <span class="dish-price">€6.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Clara</h3>
+            <span class="dish-price">€2.80</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Corona</h3>
+            <span class="dish-price">€3.50</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Turia</h3>
+            <span class="dish-price">€3.50</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Voll-Damm</h3>
+            <span class="dish-price">€3.50</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Malquerida</h3>
+            <span class="dish-price">€3.50</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Cerveza 0,0%</h3>
+            <span class="dish-price">€3.50</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Sol</h3>
+            <span class="dish-price">€4.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Pacífico</h3>
+            <span class="dish-price">€4.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Negra Modelo</h3>
+            <span class="dish-price">€4.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Modelo Especial</h3>
+            <span class="dish-price">€4.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Ocho Reales</h3>
+            <p class="dish-desc">Sin gluten</p>
+            <span class="dish-price">€4.25</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Chelada</h3>
+            <span class="dish-price">€5.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Michelada</h3>
+            <span class="dish-price">€5.50</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-cerveza">Cerveza</span>
+            <h3 class="dish-name">Ojo Rojo</h3>
+            <p class="dish-desc">Clamato</p>
+            <span class="dish-price">€5.95</span>
+          </div>
+        </article>
+
+        <div class="menu-subheading fade-in" data-category="bebidas">
+          <span data-i18n="subhead-refrescos">Refrescos</span>
+        </div>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-refresco">Refresco</span>
+            <h3 class="dish-name">Agua Chica</h3>
+            <span class="dish-price">€1.90</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-refresco">Refresco</span>
+            <h3 class="dish-name">Agua 1.5L</h3>
+            <span class="dish-price">€2.90</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-refresco">Refresco</span>
+            <h3 class="dish-name">Agua con Gas</h3>
+            <span class="dish-price">€2.80</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-refresco">Refresco</span>
+            <h3 class="dish-name">Tónica</h3>
+            <span class="dish-price">€2.60</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-refresco">Refresco</span>
+            <h3 class="dish-name">Fanta / Sprite</h3>
+            <span class="dish-price">€2.50</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-refresco">Refresco</span>
+            <h3 class="dish-name">Nestea / Aquarius</h3>
+            <span class="dish-price">€2.50</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-refresco">Refresco</span>
+            <h3 class="dish-name">Coca Cola</h3>
+            <span class="dish-price">€2.60</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-refresco">Refresco</span>
+            <h3 class="dish-name">Coca Cola Zero</h3>
+            <span class="dish-price">€2.60</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-refresco">Refresco</span>
+            <h3 class="dish-name">Jarritos</h3>
+            <p class="dish-desc">Preguntar sabores</p>
+            <span class="dish-price">€3.80</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-refresco">Refresco</span>
+            <h3 class="dish-name">Zumo de Naranja</h3>
+            <span class="dish-price">€2.40</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-refresco">Refresco</span>
+            <h3 class="dish-name">Zumo de Piña</h3>
+            <span class="dish-price">€2.40</span>
+          </div>
+        </article>
+
+        <div class="menu-subheading fade-in" data-category="bebidas">
+          <span data-i18n="subhead-aguas">Aguas Frescas</span>
+          <small data-i18n="subhead-aguas-note">33cl</small>
+        </div>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-agua-fresca">Agua Fresca</span>
+            <h3 class="dish-name">Guayaba</h3>
+            <span class="dish-price">€3.95</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-agua-fresca">Agua Fresca</span>
+            <h3 class="dish-name">Jamaica</h3>
+            <span class="dish-price">€3.95</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-agua-fresca">Agua Fresca</span>
+            <h3 class="dish-name">Tamarindo</h3>
+            <span class="dish-price">€3.95</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-agua-fresca">Agua Fresca</span>
+            <h3 class="dish-name">Horchata</h3>
+            <span class="dish-price">€3.95</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-agua-fresca">Agua Fresca</span>
+            <h3 class="dish-name">Limón</h3>
+            <span class="dish-price">€3.95</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-agua-fresca">Agua Fresca</span>
+            <h3 class="dish-name">Pink Lemonade</h3>
+            <p class="dish-desc">Con gas</p>
+            <span class="dish-price">€4.25</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-agua-fresca">Agua Fresca</span>
+            <h3 class="dish-name">Blue Lemonade</h3>
+            <p class="dish-desc">Con gas</p>
+            <span class="dish-price">€4.25</span>
+          </div>
+        </article>
+
+        <div class="menu-subheading fade-in" data-category="bebidas">
+          <span data-i18n="subhead-batidos">Batidos</span>
+        </div>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-batido">Batido</span>
+            <h3 class="dish-name">Oreo Madness</h3>
+            <span class="dish-price">€8.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-batido">Batido</span>
+            <h3 class="dish-name">Tropichula</h3>
+            <p class="dish-desc">Fresa, Banana</p>
+            <span class="dish-price">€8.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-batido">Batido</span>
+            <h3 class="dish-name">Mango No Come Mango</h3>
+            <span class="dish-price">€8.00</span>
+          </div>
+        </article>
+
+        <article class="dish-card fade-in" data-category="bebidas">
+          <div class="dish-info">
+            <span class="dish-tag" data-i18n="tag-batido">Batido</span>
+            <h3 class="dish-name">Piña y Menta</h3>
+            <span class="dish-price">€8.00</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       RESERVATIONS
+  ═══════════════════════════════════════════ -->
+  <section class="reservations section" id="reservas">
+    <div class="container">
+      <div class="reservations-inner fade-in">
+
+        <div class="reservations-text">
+          <span class="section-label" data-i18n="res-label">Reservas</span>
+          <h2 class="section-title" data-i18n="res-title">¿Tienes hambre?</h2>
+          <p data-i18n="res-desc">Reserva tu mesa llamando directamente. Te esperamos con tortillas recién hechas y micheladas bien frías.</p>
+          <a href="tel:+34935417610" class="btn btn-primary res-phone">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            +34 935 417 610
+          </a>
+        </div>
+
+        <div class="hours-table">
+          <h3 data-i18n="hours-title">Horario</h3>
+          <table>
+            <tbody>
+              <tr><td>Lunes</td>    <td>13:00 – 23:30</td></tr>
+              <tr><td>Martes</td>   <td>13:00 – 23:30</td></tr>
+              <tr><td>Miércoles</td><td>13:00 – 23:30</td></tr>
+              <tr><td>Jueves</td>   <td>13:00 – 23:30</td></tr>
+              <tr><td>Viernes</td>  <td>13:00 – 23:30</td></tr>
+              <tr><td>Sábado</td>   <td>10:30 – 23:30</td></tr>
+              <tr><td>Domingo</td>  <td>13:00 – 22:30</td></tr>
+            </tbody>
+          </table>
+          <p class="price-range" data-i18n="price-range">Precio medio: <strong>€20–30 / persona</strong></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       GALLERY
+  ═══════════════════════════════════════════ -->
+  <section class="gallery section" id="galeria">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label" data-i18n="gallery-label">Galería</span>
+        <h2 class="section-title" data-i18n="gallery-title">La experiencia Chula</h2>
+      </div>
+    </div>
+
+    <!-- Scrolling strips — full width, outside container -->
+    <div class="gallery-strips">
+
+      <!-- Row 1: scrolls LEFT -->
+      <div class="gallery-strip">
+        <div class="gallery-track gallery-track--left">
+          <!-- original set -->
+          <figure class="gallery-item" data-index="0"><img src="images/gallery3.jpg"  alt="Ambiente cálido y colorido de La Chula" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="1"><img src="images/gallery4.jpg"  alt="Tacos al pastor recién servidos" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="2"><img src="images/gallery5.jpg"  alt="Platos mexicanos de temporada" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="3"><img src="images/gallery6.jpg"  alt="Especialidades mexicanas para compartir" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="4"><img src="images/gallery7.jpg"  alt="Guacamole casero preparado al momento" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="5"><img src="images/gallery8.jpg"  alt="Micheladas listas para disfrutar" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="6"><img src="images/galery.png"    alt="Detalle decorativo de La Chula" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="7"><img src="images/drink1.png"    alt="Cóctel de autor en La Chula" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="8"><img src="images/drink4.png"    alt="Selección de bebidas de La Chula" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="9"><img src="images/drink5.png"    alt="Michelada y cócteles mexicanos" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="10"><img src="images/exterior1.png" alt="Fachada exterior de La Chula" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="11"><img src="images/interior1.jpg" alt="Interior con pared de flores" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="12"><img src="images/interior2.png" alt="Salón interior con sofás acogedores" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <!-- duplicate set for seamless loop -->
+          <figure class="gallery-item" data-index="0" aria-hidden="true"><img src="images/gallery3.jpg"  alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="1" aria-hidden="true"><img src="images/gallery4.jpg"  alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="2" aria-hidden="true"><img src="images/gallery5.jpg"  alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="3" aria-hidden="true"><img src="images/gallery6.jpg"  alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="4" aria-hidden="true"><img src="images/gallery7.jpg"  alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="5" aria-hidden="true"><img src="images/gallery8.jpg"  alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="6" aria-hidden="true"><img src="images/galery.png"    alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="7" aria-hidden="true"><img src="images/drink1.png"    alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="8" aria-hidden="true"><img src="images/drink4.png"    alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="9" aria-hidden="true"><img src="images/drink5.png"    alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="10" aria-hidden="true"><img src="images/exterior1.png" alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="11" aria-hidden="true"><img src="images/interior1.jpg" alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="12" aria-hidden="true"><img src="images/interior2.png" alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+        </div>
+      </div>
+
+      <!-- Row 2: scrolls RIGHT -->
+      <div class="gallery-strip">
+        <div class="gallery-track gallery-track--right">
+          <!-- original set (reversed for visual variety) -->
+          <figure class="gallery-item" data-index="12"><img src="images/interior2.png" alt="Salón interior con sofás acogedores" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="11"><img src="images/interior1.jpg" alt="Interior con pared de flores" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="10"><img src="images/exterior1.png" alt="Fachada exterior de La Chula" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="9"><img src="images/drink5.png"    alt="Michelada y cócteles mexicanos" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="8"><img src="images/drink4.png"    alt="Selección de bebidas de La Chula" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="7"><img src="images/drink1.png"    alt="Cóctel de autor en La Chula" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="6"><img src="images/galery.png"    alt="Detalle decorativo de La Chula" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="5"><img src="images/gallery8.jpg"  alt="Micheladas listas para disfrutar" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="4"><img src="images/gallery7.jpg"  alt="Guacamole casero preparado al momento" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="3"><img src="images/gallery6.jpg"  alt="Especialidades mexicanas para compartir" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="2"><img src="images/gallery5.jpg"  alt="Platos mexicanos de temporada" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="1"><img src="images/gallery4.jpg"  alt="Tacos al pastor recién servidos" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="0"><img src="images/gallery3.jpg"  alt="Ambiente cálido y colorido de La Chula" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <!-- duplicate set for seamless loop -->
+          <figure class="gallery-item" data-index="12" aria-hidden="true"><img src="images/interior2.png" alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="11" aria-hidden="true"><img src="images/interior1.jpg" alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="10" aria-hidden="true"><img src="images/exterior1.png" alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="9" aria-hidden="true"><img src="images/drink5.png"    alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="8" aria-hidden="true"><img src="images/drink4.png"    alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="7" aria-hidden="true"><img src="images/drink1.png"    alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="6" aria-hidden="true"><img src="images/galery.png"    alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="5" aria-hidden="true"><img src="images/gallery8.jpg"  alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="4" aria-hidden="true"><img src="images/gallery7.jpg"  alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="3" aria-hidden="true"><img src="images/gallery6.jpg"  alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="2" aria-hidden="true"><img src="images/gallery5.jpg"  alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="1" aria-hidden="true"><img src="images/gallery4.jpg"  alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+          <figure class="gallery-item" data-index="0" aria-hidden="true"><img src="images/gallery3.jpg"  alt="" loading="lazy"><div class="gallery-overlay" aria-hidden="true"></div></figure>
+        </div>
+      </div>
+
+    </div><!-- /.gallery-strips -->
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galería de fotos" hidden>
+      <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+      <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&#x2715;</button>
+      <button class="lightbox-prev"  id="lightbox-prev"  aria-label="Foto anterior">&#x2039;</button>
+      <button class="lightbox-next"  id="lightbox-next"  aria-label="Foto siguiente">&#x203A;</button>
+      <div class="lightbox-img-wrap">
+        <img src="" alt="" id="lightbox-img" class="lightbox-img">
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section class="testimonials section" id="opiniones">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label" data-i18n="test-label">Opiniones</span>
+        <h2 class="section-title" data-i18n="test-title">Lo que dicen<br>nuestros clientes</h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <blockquote class="testimonial-card fade-in">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p data-i18n="test-1">"Los mejores tacos al pastor que he probado fuera de México. La pared de flores es una pasada y la michelada está para repetir. Ya tengo sitio fijo en Barcelona."</p>
+          <footer>
+            <strong>Laura M.</strong>
+            <span data-i18n="test-1-loc">Gràcia, Barcelona</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card fade-in">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p data-i18n="test-2">"Ambiente genial, muy auténtico. La cochinita burger es un must absoluto. El personal súper amable y el local tiene mucho encanto. Volveré seguro."</p>
+          <footer>
+            <strong>Marc T.</strong>
+            <span data-i18n="test-2-loc">Eixample, Barcelona</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card fade-in">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p data-i18n="test-3">"Una joya cerca de la Sagrada Família. El aguachile estaba espectacular y los precios son muy razonables para la calidad. Perfecto para venir en grupo."</p>
+          <footer>
+            <strong>Sofia K.</strong>
+            <span data-i18n="test-3-loc">El Born, Barcelona</span>
+          </footer>
+        </blockquote>
+
+        <!-- 4th review — replace with real review when available -->
+        <blockquote class="testimonial-card fade-in">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p>"[Reseña real pendiente — sustituir con texto del cliente]"</p>
+          <footer>
+            <strong>[Nombre]</strong>
+            <span>Barcelona</span>
+          </footer>
+        </blockquote>
+
+      </div>
+
+      <!-- Google reviews CTA -->
+      <div class="reviews-cta fade-in">
+        <a
+          href="https://www.google.com/maps/place/La+Chula+Restaurante+%7C+Sagrada+Familia,+Barcelona/@41.4074013,2.1758351,21z/data=!4m8!3m7!1s0x12a4a2db17d52e25:0x5b6a0c0bff50d1b7!8m2!3d41.4074013!4d2.1758351!9m1!1b1!16s%2Fg%2F11f53hgxv8"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-google-reviews">
+          <!-- Google "G" logo -->
+          <svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true">
+            <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+            <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+            <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+            <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+            <path fill="none" d="M0 0h48v48H0z"/>
+          </svg>
+          <span data-i18n="reviews-cta">Leer todas las reseñas en Google</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       LOCATION & HOURS
+  ═══════════════════════════════════════════ -->
+  <section class="location section" id="contacto">
+    <div class="container">
+      <div class="location-grid">
+
+        <div class="location-info fade-in">
+          <span class="section-label" data-i18n="loc-label">Encuéntranos</span>
+          <h2 class="section-title" data-i18n="loc-title">Ven a visitarnos</h2>
+          <address>
+            <div class="address-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Carrer del Rosselló, 483<br>08025 Barcelona<br><em data-i18n="loc-neighborhood">Eixample (cerca de la Sagrada Família)</em></span>
+            </div>
+            <div class="address-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <a href="tel:+34935417610">+34 935 417 610</a>
+            </div>
+            <div class="address-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+              <a href="https://instagram.com/lachula_bcn" target="_blank" rel="noopener noreferrer">@lachula_bcn</a>
+            </div>
+          </address>
+        </div>
+
+        <div class="location-map fade-in">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d764.8!2d2.1758351!3d41.4074013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2db17d52e25%3A0x5b6a0c0bff50d1b7!2sLa%20Chula%20Restaurante%20%7C%20Sagrada%20Familia%2C%20Barcelona!5e0!3m2!1sen!2ses!4v1"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            title="Ubicación de La Chula Cervecería Mexicana en Google Maps"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="La Chula Cervecería Mexicana" class="footer-logo-img">
+        </div>
+
+        <nav class="footer-links" aria-label="Navegación del pie de página">
+          <h4 data-i18n="footer-nav-title">Navegación</h4>
+          <ul>
+            <li><a href="#inicio"         data-i18n="nav-home">Inicio</a></li>
+            <li><a href="#menu"           data-i18n="nav-menu-link">Menú</a></li>
+            <li><a href="#sobre-nosotros" data-i18n="nav-about">Nosotros</a></li>
+            <li><a href="#reservas"       data-i18n="nav-reservations">Reservas</a></li>
+            <li><a href="#contacto"       data-i18n="nav-contact">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact">
+          <h4 data-i18n="footer-contact-title">Contacto</h4>
+          <p>Carrer del Rosselló, 483<br>08025 Barcelona</p>
+          <a href="tel:+34935417610">+34 935 417 610</a>
+          <a href="https://instagram.com/lachula_bcn" target="_blank" rel="noopener noreferrer" class="footer-insta">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+            @lachula_bcn
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer-copy">© 2026 La Chula Cervecería Mexicana · Barcelona. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
